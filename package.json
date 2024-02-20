@@ -1,0 +1,23 @@
+{
+    "name": "openai-landing-zone-hack",
+    "version": "1.0.0",
+    "description": "A hack for exploring the Azure OpenAI Landing Zone",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "spellcheck": "mdspell 'hacks/*.md' --en-gb -n --report",
+      "pdf": "md-to-pdf ./hacks/*.md && mkdir -p dist && mv ./hacks/*.pdf ./dist"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/azure/openai-landing-zone-hack"
+    },
+    "author": "Liam Moat",
+    "bugs": {
+      "url": "https://github.com/azure/openai-landing-zone-hack/issues"
+    },
+    "homepage": "https://github.com/azure/openai-landing-zone-hack#readme",
+    "devDependencies": {
+      "md-to-pdf": "^5.2.3",
+      "markdown-spellcheck": "^0.11.0"
+    }
+  }

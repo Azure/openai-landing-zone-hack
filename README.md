@@ -1,14 +1,26 @@
-# Project
+# Azure OpenAI Service - Landing Zone Hack
+[Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview) provides REST API access to OpenAI's powerful language models including the GPT-4, GPT-35-Turbo, and Embeddings model series. These models can be easily adapted to your specific task including but not limited to content generation, summarization, semantic search, and natural language to code translation.
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+When deploying complex services such as Azure OpenAI, using a Landing Zone approach helps you manage your resources in a structured, consistent manner, ensuring governance, compliance, and security are properly maintained. The [Azure OpenAI Landing Zone](https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-openai-landing-zone-reference-architecture/ba-p/3882102) is a reference architecture that integrates a variety of services to create a seamless infrastructure for running OpenAI workloads.
 
-As the maintainer of this project, please make a few updates:
+![Azure OpenAI Landing Zone](./hacks/images/landing-zone.png)
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+For enterprise deployments of Azure OpenAI Service, it is recommended to utilise Azure API Management to provide comprehensive logging and monitoring and enhanced security of the API. This combination enables advanced logging capabilities for tracking API usage and performance and robust security measures to help protect sensitive data and help prevent malicious activity.
+
+![Azure OpenAI with API Management](./hacks/images/arch.png)
+
+## Hacks
+
+1. [Hack 1 - Deploy Azure OpenAI](./hacks/01-deploy-azure-openai.md)
+1. [Hack 2 - Implement Chargeback](./hacks/02-implement-chargeback.md)
+
+## Resources and contributions
+
+* [Azure OpenAI Landing Zone reference architecture](https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-openai-landing-zone-reference-architecture/ba-p/3882102) by [Freddy Ayala](https://techcommunity.microsoft.com/t5/user/viewprofilepage/user-id/1940863)
+
+* [Implement logging and monitoring for Azure OpenAI models](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/openai/architecture/log-monitor-azure-openai)
+
+* [Calculating Chargebacks for Business Units/Projects Utilizing a Shared Azure OpenAI Instance](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/calculating-chargebacks-for-business-units-projects-utilizing-a/ba-p/3909202) by [Shikha Sinha](https://techcommunity.microsoft.com/t5/user/viewprofilepage/user-id/1566597#profile)
 
 ## Contributing
 
